@@ -1,0 +1,36 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.item-wrap{
+    position: relative;
+    background: #eee;
+    width: 600px;
+    height: 1800px;
+    border-radius: 8px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.static{
+    position: static;
+    left: 60px;
+}
+
+.relative{
+    position: relative;
+    left: 60px;
+}
+
+.absolute{
+    position: absolute;
+    left: 60px;
+}
+
+.fixed{
+    position: fixed;
+    left: 60px;
+}
+

@@ -1,0 +1,40 @@
+body{
+    height: 2000px;
+    background-color: #eee;
+}
+
+.bg-container{
+    position: relative;
+    width: 94%;
+    margin: 10vw 3vw;
+    overflow: hidden;
+    border-radius: 20px; 
+}
+
+#image{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+#text{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 160px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    opacity: 0.9;
+    color: #fff;
+    margin-top: 240px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#bg{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+}

@@ -1,0 +1,39 @@
+body{
+    background-color: #111;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: auto;
+    transform: traslate(-50%, -50%);
+}
+
+.item-wrap{
+    position: relative;
+    border: 2px solid #004fff;
+    border-radius: 6px;
+    background: #ddd;
+}
+
+.item{
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #004fff;
+    color: #222;
+    width: 120px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 6px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.item:hover{
+    box-shadow: 0 6px 32px rgba(0, 79, 255, 0.3);
+}

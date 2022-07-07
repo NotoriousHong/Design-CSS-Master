@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style(design base 13.2,  z-index and parallax).css">
+    <link rel="stylesheet" href="reset css.css">
+    <title>Momentum</title>
+
+
+    <!--web font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Public+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet">
+ </head>
+
+
+ <body>
+   <form class="hidden" id="login-form">
+      <input 
+      required
+      maxlength="15"
+      type="text" 
+      placeholder="What is your name?"
+      />
+      <input type="submit" value="Log In" />
+   </form>
+   <h2 id="clock">11:12</h2>
+   <h1 id="greeting" class="hidden"></h1>
+   <form id="todo-form">
+      <input type="text" placeholder="Write a To Do and Press Enter" required>
+   </form>
+   <ul id="todo-list">
+      
+   </ul>
+   <div id="quote">
+      <span> </span>
+      <span> </span>
+   </div>
+
+   <div id="weather">
+      <span> </span>
+      <span> </span>
+   </div>
+
+
+   <div class="bg-container">
+      <img id="image" src="img(13.2)/img-1.jpg">
+      <h1 id="text">NotoriousHong</h1>
+      <img id="bg" src="img(13.2)/img-2.jpg">
+   </div>
+
+   <script type="text/javascript">
+      let bg = document.getElementById('bg');
+      let text = document.getElementById('text');
+      let image = document.getElementById('image');
+
+      window.addEventListener('scroll', function(){
+         var value = window.scrollY;
+         bg.style.top = value * 0.25 + 'px';
+         text.style.top = value * 0.15 + 'px';
+      })
+
+
+   </script>
+
+
+   <script src="app(8.2 Conclusions).js"></script>
+   <script src="app(7.8 Deleting To Dos part Three).js"></script>
+   <script src="app(6.0 Quotes).js"></script>
+   <script src="app(5.2 PadStart).js"></script>
+   <script src="app(4.7 Super Recap).js"></script>
+ </body>
+</html>
+
+
+
